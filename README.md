@@ -35,24 +35,3 @@ public class SortList {
         } while (swapped);
     }
 }
-
-
-
-Задача №2
-**Написать точно такую же процедуру, но в декларативном стиле**
-
-
-import java.util.List;
-import java.util.Collections;
-
-public class SortList {
-    public static void main(String[] args) {
-        List<Integer> numbers = List.of(4, 2, 9, 5, 1);
-        sortListDeclarative(numbers);
-        System.out.println(numbers);
-    }
-
-    public static void sortListDeclarative(List<Integer> numbers) {
-        Collections.sort(numbers, Collections.reverseOrder());
-    }
-}
